@@ -20,6 +20,11 @@ app.get('/info', async (req, res) => {
     res.send(`${JSON.stringify(result)}`);
 });
 
+
+app.get('/hi', async (req, res) => {
+    res.send("<h1>Hi Service Running!</h1>");
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}/`);
 });
